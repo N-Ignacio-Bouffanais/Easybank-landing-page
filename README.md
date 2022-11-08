@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [easybank-landing](https://github.com/N-Ignacio-Bouffanais/Easybank-landing-page)
+- Live Site URL: []()
 
 ## My process
 
