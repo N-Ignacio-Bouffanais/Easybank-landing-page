@@ -5,6 +5,7 @@ $Grayish-Blue: hsl(233, 8%, 62%);
 $Light-Grayish-Blue: hsl(220, 16%, 96%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 $White: hsl(0, 0%, 100%);
+$nav-height: 6rem;
 
 html {
   font-size: 62.5%;
@@ -14,6 +15,103 @@ html {
   margin: 0;
   padding: 0;
 }
-body{
-    font-family: 'Public Sans', sans-serif;
+body {
+  font-family: "Public Sans", sans-serif;
+}
+header {
+  .nav-container {
+    padding: 1.5rem 10vw;
+    height: $nav-height;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 20rem auto 15rem;
+    .nav-list {
+      text-align: center;
+      a {
+        color: $Grayish-Blue;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline $Lime-Green 0.3rem;
+          text-underline-offset: 2.5rem;
+        }
+      }
+    }
+    .hamburguer {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+.request-invite {
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 12rem;
+  background: linear-gradient(45deg, $Lime-Green, $Bright-Cyan);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+main{
+  h1,h2{
+    font-weight: 300;
+    color: $Dark-Blue;
+  }
+  .first-section{
+    background-color: $Very-Light-Gray;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 5rem;
+    padding-left: 10vw;
+    align-items: center;
+    height: 60rem;
+    .left-section{
+      h1{
+        font-size: 3.5rem;
+      }
+      p{
+        color: $Grayish-Blue;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 2rem 0;
+      }
+    }
+    .right-section{
+      .intro-desktop{
+        position: absolute;
+        top: $nav-height;
+        right: 0;
+        object-fit: cover;
+        object-position: bottom 10rem left 10rem;
+        z-index: 1;
+      }
+      .intro-phone{
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        z-index: 2;
+        top:$nav-height;
+        object-position: bottom 0rem left 7rem;
+      }
+      }
+    }
+    .second-section{
+      padding: 0 10vw;
+      h2{
+        font-size: 3rem;
+      }
+      p{
+        color: $Grayish-Blue;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+
+@media (max-width: 940px) {
+
 }

@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+header .nav-container {
+  padding: 1.5rem 10vw;
+  height: 6rem;
+  align-items: center;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: 20rem auto 15rem;
+}
+header .nav-container .nav-list {
+  text-align: center;
+}
+header .nav-container .nav-list a {
+  color: hsl(233deg, 8%, 62%);
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+header .nav-container .nav-list a:hover {
+  text-decoration: underline hsl(136deg, 65%, 51%) 0.3rem;
+  text-underline-offset: 2.5rem;
+}
+header .nav-container .hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.request-invite {
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 12rem;
+  background: linear-gradient(45deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+}
+
+main h1, main h2 {
+  font-weight: 300;
+  color: hsl(233deg, 26%, 24%);
+}
+main .first-section {
+  background-color: hsl(0deg, 0%, 98%);
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 5rem;
+  padding-left: 10vw;
+  align-items: center;
+  height: 60rem;
+}
+main .first-section .left-section h1 {
+  font-size: 3.5rem;
+}
+main .first-section .left-section p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+main .first-section .right-section .intro-desktop {
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  object-fit: cover;
+  object-position: bottom 10rem left 10rem;
+  z-index: 1;
+}
+main .first-section .right-section .intro-phone {
+  position: absolute;
+  right: 0;
+  object-fit: cover;
+  z-index: 2;
+  top: 6rem;
+  object-position: bottom 0rem left 7rem;
+}
+main .second-section {
+  padding: 0 10vw;
+}
+main .second-section h2 {
+  font-size: 3rem;
+}
+main .second-section p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */
