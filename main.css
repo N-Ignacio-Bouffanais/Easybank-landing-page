@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Public Sans", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
 }
 
 header .nav-container {
@@ -20,6 +21,7 @@ header .nav-container {
   width: 100%;
   margin: 0 auto;
   grid-template-columns: 20rem auto 15rem;
+  box-shadow: 0 5rem 5rem rgb(239, 239, 239);
 }
 header .nav-container .nav-list {
   text-align: center;
@@ -47,14 +49,17 @@ header .nav-container .hamburguer {
   background: linear-gradient(45deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
   color: hsl(0deg, 0%, 100%);
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
-main h1, main h2 {
+main h1,
+main h2,
+main h3,
+main h4 {
   font-weight: 300;
   color: hsl(233deg, 26%, 24%);
 }
 main .first-section {
-  background-color: hsl(0deg, 0%, 98%);
   display: grid;
   grid-template-columns: 35% 65%;
   gap: 5rem;
@@ -88,7 +93,8 @@ main .first-section .right-section .intro-phone {
   object-position: bottom 0rem left 7rem;
 }
 main .second-section {
-  padding: 0 10vw;
+  padding: 7rem 10vw 0;
+  background-color: hsl(220deg, 16%, 96%);
 }
 main .second-section h2 {
   font-size: 3rem;
@@ -98,6 +104,39 @@ main .second-section p {
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 2rem 0;
+}
+main .second-section .finance-options {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-auto-rows: 30rem;
+}
+main .second-section .finance-options h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+main .third-section {
+  padding: 0 10vw;
+}
+main .third-section h4 {
+  font-size: 3rem;
+  margin: 5rem auto 4rem;
+}
+main .third-section .articules-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-auto-rows: 20rem;
+}
+main .third-section .articules-cards .articule-card .card-content {
+  padding: 0.5rem 1.5rem;
+}
+main .third-section .articules-cards .articule-card .card-content p {
+  width: 100%;
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
 }
 
 /*# sourceMappingURL=main.css.map */
