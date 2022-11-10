@@ -136,13 +136,29 @@ main {
       display: grid;
       gap: 2rem;
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-      grid-auto-rows: 20rem;
+      grid-auto-rows: 25rem;
+      align-items: center;
       .articule-card {
+        display: flex;
+        flex-direction: column;
+        img{
+          background-size: contain;
+          width: 60%;
+          min-height: 15rem;
+          min-width: 20rem;
+          border-radius: 0.5rem 0.5rem 0 0 ;
+        }
         .card-content {
-          p {
-            width: 100%;
+          margin-top: 2rem;
+          span{
+            color: $Grayish-Blue;
           }
-          padding: 0.5rem 1.5rem;
+          p{
+            width: 60%;
+          }
+          h5{
+            margin: 0.5rem 0;
+          }
         }
       }
     }
