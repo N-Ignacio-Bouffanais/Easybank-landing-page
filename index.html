@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="description"
     content="This is a project build with CSS-GRID, HTML and Javascript, and is a challenge from frontendmentor.io">
-  <meta name="keywords" content="HTML,SASS,JavaScript,CSS-GRID,frontend developer" />
-  <meta name="author" content="Nicolas Bouffanais" />
+  <meta name="keywords" content="HTML, SASS, JavaScript, CSS-GRID, frontend developer, nicolas bouffanais" />
+  <meta name="author" content="Nicolas Ignacio Bouffanais" />
   <meta name="theme-color" content="#1372db" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easybank landing page</title>
@@ -17,14 +17,13 @@
 </head>
 
 <body>
-
   <header>
     <nav class="nav-container">
       <img src="./images/logo.svg" alt="logo-easybank">
-      <div class="nav-list">
-        <a>Home</a>
+      <div class="nav-list" id="nav-list">
+        <a href="/">Home</a>
         <a>About</a>
-        <a>Contact</a>
+        <a href="#contact">Contact</a>
         <a>Blog</a>
         <a>Careers</a>
       </div>
@@ -42,9 +41,10 @@
         <button class="request-invite">Request Invite</button>
       </div>
       <div class="right-section">
-        <img class="intro-desktop" src="./images/bg-intro-desktop.svg" alt="background green and black" width="700px"
-          height="550px">
-        <img class="intro-phone" src="./images/image-mockups.png" alt="phone-image" width="550px" height="580px">
+        <img class="intro-desktop" src="./images/bg-intro-desktop.svg" alt="background green and black" width="650px"
+          height="500px">
+        <img class="intro-movile" src="./images/bg-intro-mobile.svg" alt="background green and black movile" width="500px" height="320px">
+        <img class="intro-phone" src="./images/image-mockups.png" alt="phone-image" width="500px" height="530px">
       </div>
     </div>
     <div class="second-section">
@@ -120,9 +120,8 @@
       </div>
     </div>
   </main>
-
   <footer>
-    <div class="footer-content">
+    <div class="footer-content" id="contact">
       <img src="./images/logo.svg" alt="logo-easybank">
       <div class="footer-list">
         <a>About Us</a>

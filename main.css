@@ -27,6 +27,7 @@ header .nav-container .nav-list {
   text-align: center;
 }
 header .nav-container .nav-list a {
+  text-decoration: none;
   color: hsl(233deg, 8%, 62%);
   margin: 0 1rem;
   font-size: 1.2rem;
@@ -69,6 +70,9 @@ main .first-section {
   align-items: center;
   height: 60rem;
 }
+main .first-section .left-section {
+  min-width: 35vw;
+}
 main .first-section .left-section h1 {
   font-size: 3.5rem;
 }
@@ -85,6 +89,7 @@ main .first-section .right-section .intro-desktop {
   object-fit: cover;
   object-position: bottom 10rem left 10rem;
   z-index: 1;
+  max-width: 65vw;
 }
 main .first-section .right-section .intro-phone {
   position: absolute;
@@ -93,6 +98,14 @@ main .first-section .right-section .intro-phone {
   z-index: 2;
   top: 6rem;
   object-position: bottom 0rem left 7rem;
+  max-width: 55vw;
+}
+main .first-section .right-section .intro-movile {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  z-index: 1;
 }
 main .second-section {
   padding: 7rem 10vw 0;
@@ -159,19 +172,22 @@ main .third-section .articules-cards .articule-card .card-content h5 {
 footer {
   background-color: hsl(233deg, 26%, 24%);
   color: hsl(0deg, 0%, 100%);
-  padding: 3rem 10vw 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8rem, 22rem));
-  grid-auto-rows: 8rem;
-  column-gap: 2rem;
   font-size: 1.1rem;
   align-items: center;
   justify-content: center;
 }
-footer .footer-list {
+footer .footer-content {
+  padding: 3rem 10vw 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 22rem));
+  grid-auto-rows: 8rem;
+  column-gap: 2rem;
+}
+footer .footer-content .footer-list {
+  align-content: center;
   display: grid;
 }
-footer .footer-list a {
+footer .footer-content .footer-list a {
   text-decoration: none;
   margin-bottom: 1rem;
 }
@@ -179,7 +195,9 @@ footer p {
   margin: 1rem 0;
 }
 footer .attribution {
-  display: grid;
+  padding: 2rem 10vw;
+  display: flex;
+  justify-content: space-between;
 }
 footer .attribution a {
   color: hsl(0deg, 0%, 100%);
@@ -192,10 +210,26 @@ footer .rights {
   text-align: right;
 }
 
-@media (max-width: 830px) {
+@media (max-width: 600px) {
+  main .first-section .left-section {
+    margin-top: 20rem;
+    width: 80vw;
+  }
+  main .first-section .right-section .intro-desktop {
+    display: none;
+  }
+  main .first-section .right-section .intro-phone {
+    display: none;
+  }
+  main .first-section .right-section .intro-movile {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
   header .nav-container .nav-list {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: hsl(0deg, 0%, 100%);
     top: 7rem;
@@ -206,6 +240,7 @@ footer .rights {
     border-radius: 0.7rem;
   }
   header .nav-container .nav-list a {
+    text-decoration: none;
     color: hsl(233deg, 26%, 24%);
     margin: 1rem 0;
     font-size: 2rem;
