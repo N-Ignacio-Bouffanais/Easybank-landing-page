@@ -15,6 +15,9 @@ html {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 body {
   font-family: "Public Sans", sans-serif;
   background-color: $Very-Light-Gray;
@@ -32,7 +35,6 @@ header {
     .nav-list {
       text-align: center;
       a {
-        text-decoration: none;
         color: $Grayish-Blue;
         margin: 0 1rem;
         font-size: 1.2rem;
@@ -148,13 +150,16 @@ main {
     }
     .articules-cards {
       display: grid;
-      gap: 2rem;
+      column-gap: 2rem;
+      row-gap: 7rem;
       grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
       grid-auto-rows: 25rem;
       align-items: center;
+      margin-top: 5rem;
       .articule-card {
         display: flex;
         flex-direction: column;
+        align-items: center;
         img {
           background-size: contain;
           width: 60%;
@@ -164,14 +169,22 @@ main {
         }
         .card-content {
           margin-top: 2rem;
+          padding: 0.5rem 5vw 2rem 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           span {
             color: $Grayish-Blue;
+            align-self: center;
+            margin-right: 3vw;
           }
           p {
             width: 60%;
           }
           h5 {
             margin: 0.5rem 0;
+            font-size: 1.2rem;
+            width: 60%;
           }
         }
       }
@@ -191,7 +204,6 @@ footer {
       align-content: center;
       display: grid;
       a {
-        text-decoration: none;
         margin-bottom: 1rem;
       }
     }
@@ -253,7 +265,6 @@ footer {
       padding: 1rem;
       border-radius: 0.7rem;
       a {
-        text-decoration: none;
         color: $Dark-Blue;
         margin: 1rem 0;
         font-size: 2rem;
@@ -278,6 +289,14 @@ footer {
     }
     button {
       display: none;
+    }
+  }
+  main .third-section{
+    display: flex;
+    flex-direction: column;
+    .articules-cards{
+      margin-top: 2rem;
+      row-gap: 10rem;
     }
   }
 }
