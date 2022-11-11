@@ -1,6 +1,6 @@
 # Frontend Mentor - Easybank landing page solution
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,7 +13,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-
 
 ## Overview
 
@@ -39,35 +38,73 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- SASS
+- PNPM
 
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<img
+  onclick="Open()"
+  class="hamburguer"
+  id="hamburguer"
+  src="./images/icon-hamburger.svg"
+  alt="hamburguer-icon"
+/>
+<img
+  onclick="Close()"
+  class="close"
+  id="close"
+  src="./images/icon-close.svg"
+  alt="icon-close"
+/>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+a {
+  color: $Dark-Blue;
+  margin: 1rem 0;
+  font-size: 2rem;
+  &:hover {
+    text-decoration: underline $Lime-Green 0.3rem;
+    text-underline-offset: 1.2rem;
+  }
 }
 ```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const x = document.getElementById("close")
+const y = document.getElementById("hamburguer")
+
+function Open() {
+    if (window.innerWidth <= 830) {
+        x.style.display = "block";
+        y.style.display = "none";
+    }
+    else {
+        x.style.display = "none";
+        y.style.display = "none";
+    }
+}
+function Close() {
+    if (window.innerWidth <= 830) {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+    else {
+        x.style.display = "none";
+        y.style.display = "none";
+    }
 }
 ```
 
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
+I want to practise JavsScript ES6+ and Typescript.
+Also I will practise with nodejs to become a FullStack developer.
 
 ## Author
 
 - Website - [Nicolas_Bouffanais](https://nicolas-bouffanais.vercel.app/src/index.html)
 - Frontend Mentor - [@N-Ignacio-Bouffanais](https://www.frontendmentor.io/profile/N-Ignacio-Bouffanais)
 - Twitter - [@N_Bouffanais](https://twitter.com/N_Bouffanais)
-
