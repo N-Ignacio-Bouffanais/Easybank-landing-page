@@ -44,7 +44,9 @@ header {
     }
     .hamburguer {
       display: none;
-      cursor: pointer;
+    }
+    .close{
+      display: none;
     }
   }
 }
@@ -128,6 +130,7 @@ main {
   }
   .third-section {
     padding: 0 10vw;
+    margin: 0 auto 7rem;
     h4 {
       font-size: 3rem;
       margin: 5rem auto 4rem;
@@ -141,22 +144,22 @@ main {
       .articule-card {
         display: flex;
         flex-direction: column;
-        img{
+        img {
           background-size: contain;
           width: 60%;
           min-height: 15rem;
           min-width: 20rem;
-          border-radius: 0.5rem 0.5rem 0 0 ;
+          border-radius: 0.5rem 0.5rem 0 0;
         }
         .card-content {
           margin-top: 2rem;
-          span{
+          span {
             color: $Grayish-Blue;
           }
-          p{
+          p {
             width: 60%;
           }
-          h5{
+          h5 {
             margin: 0.5rem 0;
           }
         }
@@ -164,8 +167,80 @@ main {
     }
   }
 }
-footer{
+footer {
   background-color: $Dark-Blue;
+  color: $White;
+  padding: 3rem 10vw 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 22rem));
+  grid-auto-rows: 8rem;
+  column-gap: 2rem;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  .footer-list {
+    display: grid;
+    a {
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+  }
+  p {
+    margin: 1rem 0;
+  }
+  .attribution {
+    display: grid;
+    a {
+      color: $White;
+      margin: 1rem 0;
+      span {
+        color: $Lime-Green;
+      }
+    }
+  }
+  .rights {
+    text-align: right;
+  }
 }
-@media (max-width: 940px) {
+@media (max-width: 830px) {
+  header .nav-container{
+    .nav-list{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: $White;
+      top: 7rem;
+      left: 10vw;
+      width: 80vw;
+      z-index: 3;
+      padding: 1rem;
+      border-radius: 0.7rem;
+      a{
+        color: $Dark-Blue;
+        margin: 1rem 0;
+        font-size: 2rem;
+        &:hover {
+          text-decoration: underline $Lime-Green 0.3rem;
+          text-underline-offset: 1.2rem;
+        }
+      }
+    }
+    .hamburguer{
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10vw;
+      top: 2rem;
+    }
+    .close{
+      cursor: pointer;
+      position: absolute;
+      right: 10vw;
+      top: 2rem;
+    }
+    button{
+      display: none;
+    }
+  }
+
 }

@@ -38,7 +38,9 @@ header .nav-container .nav-list a:hover {
 }
 header .nav-container .hamburguer {
   display: none;
-  cursor: pointer;
+}
+header .nav-container .close {
+  display: none;
 }
 
 .request-invite {
@@ -117,6 +119,7 @@ main .second-section .finance-options h3 {
 }
 main .third-section {
   padding: 0 10vw;
+  margin: 0 auto 7rem;
 }
 main .third-section h4 {
   font-size: 3rem;
@@ -155,6 +158,78 @@ main .third-section .articules-cards .articule-card .card-content h5 {
 
 footer {
   background-color: hsl(233deg, 26%, 24%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 3rem 10vw 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 22rem));
+  grid-auto-rows: 8rem;
+  column-gap: 2rem;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-list {
+  display: grid;
+}
+footer .footer-list a {
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+footer p {
+  margin: 1rem 0;
+}
+footer .attribution {
+  display: grid;
+}
+footer .attribution a {
+  color: hsl(0deg, 0%, 100%);
+  margin: 1rem 0;
+}
+footer .attribution a span {
+  color: hsl(136deg, 65%, 51%);
+}
+footer .rights {
+  text-align: right;
+}
+
+@media (max-width: 830px) {
+  header .nav-container .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0deg, 0%, 100%);
+    top: 7rem;
+    left: 10vw;
+    width: 80vw;
+    z-index: 3;
+    padding: 1rem;
+    border-radius: 0.7rem;
+  }
+  header .nav-container .nav-list a {
+    color: hsl(233deg, 26%, 24%);
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  header .nav-container .nav-list a:hover {
+    text-decoration: underline hsl(136deg, 65%, 51%) 0.3rem;
+    text-underline-offset: 1.2rem;
+  }
+  header .nav-container .hamburguer {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10vw;
+    top: 2rem;
+  }
+  header .nav-container .close {
+    cursor: pointer;
+    position: absolute;
+    right: 10vw;
+    top: 2rem;
+  }
+  header .nav-container button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
