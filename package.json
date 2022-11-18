@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/N-Ignacio-Bouffanais/Easybank-landing-page#readme",
   "dependencies": {
-    "sass": "^1.56.0"
+    "sass": "1.56.0"
   }
 }
